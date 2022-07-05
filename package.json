@@ -16,8 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy:dev": "npm run build && aws s3 sync ./build/ s3://hc-react-aws-dev --acl public-read",
-    "deploy:prod": "npm run build && aws s3 sync ./build/ s3://hc-react-aws-prod --acl public-read"
+    "deploy:dev": "npm run build && aws s3 sync ./build/ s3://hc-react-aws-dev2 --acl public-read",
+    "deploy:prod": "npm run build && aws s3 sync ./build/ s3://hc-react-aws-prod2 --acl public-read"
   },
   "author": "Clayton Salvador",
   "eslintConfig": {
