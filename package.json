@@ -19,7 +19,7 @@
     "deploy:dev": "npm run build && aws s3 sync ./build/ s3://hc-react-aws-dev --acl public-read",
     "deploy:prod": "npm run build && aws s3 sync ./build/ s3://hc-react-aws-prod --acl public-read"
   },
-  "author": "Douglas Morais",
+  "author": "Clayton Salvador",
   "eslintConfig": {
     "extends": [
       "react-app",

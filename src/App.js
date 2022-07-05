@@ -16,7 +16,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Professor Douglas Morais
+          Clayton Salvador
         </a>
       </header>
     </div>
