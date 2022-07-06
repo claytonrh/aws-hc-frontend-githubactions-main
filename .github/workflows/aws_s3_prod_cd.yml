@@ -1,1 +1,22 @@
 
+name: Publicando em ambiente de Prod
+on: 
+  push:
+    branches:
+      - master
+
+jobs: 
+  build:
+    runs-on: unbutu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Configurando credenciais AWS
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-accesss-key: ${{secrets.AWS_ACCESS_KEY}}
+          aws-secret-access-key: ${{secrets.AWS__SECRET_ACCESS_KEY}}
+          aws-region: ${{secrets.AWS_REGION}}
+
+    - name: Publicando na AWS - prod
+      run: npm install && npm run build:prod
