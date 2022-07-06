@@ -18,4 +18,4 @@ jobs:
           aws-region: ${{secrets.AWS_REGION}}
 
     - name: Publicando na AWS - dev
-      run: npm install && npm run build:dev
+      run: npm install && npm run deploy:dev
