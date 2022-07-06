@@ -1,4 +1,3 @@
-
 name: Publicando em ambiente de Prod
 on: 
   push:
@@ -7,7 +6,7 @@ on:
 
 jobs: 
   build:
-    runs-on: unbutu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
